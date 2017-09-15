@@ -9,6 +9,10 @@ import javax.crypto.spec.DESKeySpec
  * * 1、创建cipher对象
  * 2、初始化cipher对象
  * 3、加密/解密
+ *
+ * DES加密
+ * DES/CBC/NoPadding(56) ->56:8个字节，8*8 = 64位；DES只有前7位参与加密运算，最后一位作为校验码
+ *
  */
 fun main(args: Array<String>) {
     //注意DES加密秘钥的长度在8位及8位以上
